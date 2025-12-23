@@ -2,12 +2,12 @@ variable "location" {default="East US"}
 variable "resource_group" {default="kcluster"}
 variable "cluster_name" {default="kcluster"}
 variable "dns_prefix" {default="kcluster"}
-variable "ssh_public_key" {default="/home/mitali/Documents/cloud/advanced_cloud/azure_key.pub"}
+variable "ssh_public_key" {}
 variable "node_count" {default="4"}
-variable "subscription_id" {default="43793a54-78bc-4a95-a4b7-8c5fe4a7dd90"}
-variable "client_id" {default="462bb9e9-e1cd-4071-8872-84c40b9bcace"}
-variable "client_secret" {default="fOhQ60OgNltnHvo7gC08Fu.q4UWCmDVN6v"}
-variable "tenant_id" {default="a8eec281-aaa3-4dae-ac9b-9a398b9215e7"}
+variable "subscription_id" {}
+variable "client_id" {}
+variable "client_secret" {}
+variable "tenant_id" {}
 
 provider "azurerm" {
   version = "=2.20.0"
