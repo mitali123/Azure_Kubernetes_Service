@@ -1,2 +1,3 @@
 # Azure_Kubernetes_Service
-repo to create kubernetes cluster using AKS using Terraform
+
+This Terraform configuration provisions an end-to-end Azure infrastructure consisting of an AKS Kubernetes cluster with autoscaling nodes deployed into a custom virtual network and subnet, along with three separate MySQL servers and databases for webapp, poller, and notifier services. It configures Azure CNI networking, availability zones, and secure SSH access for the cluster, then enables controlled database access by allowing the AKS subnet to connect to each MySQL server through virtual network rules. Overall, it sets up a scalable container platform with dedicated backend databases and secure network integration on Azure
